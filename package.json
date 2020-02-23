@@ -1,0 +1,27 @@
+{
+  "name": "b64url-buffer",
+  "version": "0.1.0",
+  "description": "URL friendly base64",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "devDependencies": {
+    "ava": "^3.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmaevsky/b64url.git"
+  },
+  "keywords": [
+    "base64",
+    "URL",
+    "buffer"
+  ],
+  "author": "Dmitry Maevsky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmaevsky/b64url/issues"
+  },
+  "homepage": "https://github.com/dmaevsky/b64url#readme"
+}
