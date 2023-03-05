@@ -1,13 +1,14 @@
 {
   "name": "b64url-buffer",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "URL friendly base64",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "ava"
+    "test": "node ./index.spec.js | utap"
   },
   "devDependencies": {
-    "ava": "^3.15.0"
+    "utap": "^0.2.0"
   },
   "repository": {
     "type": "git",

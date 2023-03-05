@@ -1,11 +1,12 @@
-const test = require('ava');
+import test from 'node:test';
+import assert from 'node:assert/strict';
 
-const { encode, decode } = require('./index');
-const crypto = require('crypto');
+import { encode, decode }  from './index.js';
+import crypto from 'node:crypto';
 
-test('roundtrip', t => {
+test('roundtrip', () => {
   const buffer = crypto.randomBytes(64);
   const buffer1 = decode(encode(buffer));
 
-  buffer.forEach((b, i) => t.is(b, buffer1[i]));
+  buffer.forEach((b, i) => assert.equal(b, buffer1[i]));
 });
